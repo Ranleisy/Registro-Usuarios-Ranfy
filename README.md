@@ -1,5 +1,3 @@
-Aquí tienes el README.md actualizado y completo para tu proyecto con el CRUD de Usuarios (ya no menciona municipios, sino usuarios). Está listo para copiar y pegar directamente en la raíz del proyecto (archivo README.md). Se ve profesional, claro y refleja todos los cambios que hicimos.
-Markdown# DenunciaUnaBestia - CRUD de Usuarios
 
 Proyecto de **Web API** con ASP.NET Core para gestionar usuarios básicos del sistema de denuncias, desarrollado siguiendo las sesiones del curso.
 
