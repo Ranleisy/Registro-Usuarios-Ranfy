@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="DenunciaUnaBestia.Api/DenunciaUnaBestia.Api.csproj" />
+  <Project Path="DenunciaUnaBestia.Domain/DenunciaUnaBestia.Domain.csproj" Id="85691407-cb23-4928-8dfb-3141bbbff305" />
+</Solution>
