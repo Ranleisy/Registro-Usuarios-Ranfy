@@ -23,6 +23,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\DenunciaUnaBestia.Domain\DenunciaUnaBestia.Domain.csproj" />
+    <ProjectReference Include="..\DenunciaUnaBestia.Application\DenunciaUnaBestia.Application.csproj" />
   </ItemGroup>
 
 </Project>
