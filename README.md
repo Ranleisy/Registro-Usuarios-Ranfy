@@ -5,8 +5,9 @@ Proyecto de **Web API** con ASP.NET Core para gestionar una red social, desarrol
 ## Características principales
 - ASP.NET Core Web API con **Controllers** (no Minimal APIs)
 - Entity Framework Core + SQL Server
-- Arquitectura en capas: **Domain** e **Infrastructure**
+- Arquitectura en capas: **Domain**, **Infrastructure** y **Application**
 - Repositorios con patrón Repository + interfaces
+- Capa de servicios con validaciones de negocio
 - Swagger habilitado solo en entorno de Development
 - CRUD completo para todas las entidades
 
@@ -73,11 +74,11 @@ Proyecto de **Web API** con ASP.NET Core para gestionar una red social, desarrol
 ## Cómo ejecutar localmente
 1. Clona el repositorio:
 ```
-git clone https://github.com/Ranleisy/DenunciaUnaBestia-Api-CRUD-Municipalities-Ranfy.git
+git clone https://github.com/Ranleisy/Registro-Usuarios-Ranfy.git
 ```
 2. Entra a la carpeta del proyecto:
 ```
-cd DenunciaUnaBestia-Api-CRUD-Municipalities-Ranfy/DenunciaUnaBestia.Api
+cd Registro-Usuarios-Ranfy/DenunciaUnaBestia.Api
 ```
 3. Compila:
 ```
@@ -131,10 +132,25 @@ DenunciaUnaBestia.Domain/
         └── Repositories/
             └── Repositories.cs
 
+DenunciaUnaBestia.Application/
+├── Contract/
+│   └── IServices.cs
+├── Core/
+│   ├── IBaseService.cs
+│   └── ServiceResult.cs
+├── Dtos/
+│   ├── Usuario/UsuarioDto.cs
+│   ├── Post/PostDto.cs
+│   ├── Comentario/ComentarioDto.cs
+│   ├── Like/LikeDto.cs
+│   └── Seguidor/SeguidorDto.cs
+└── Service/
+    └── Services.cs
+
 DenunciaUnaBestia.Api/
 ├── Controllers/
 │   ├── UsersController.cs
-│   └── Controllers.cs
+│   └── AppControllers.cs
 ├── appsettings.json
 └── Program.cs
 ```
